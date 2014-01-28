@@ -7,12 +7,12 @@ requests are welcome.
 
 # ATTRIBUTES
 
-* `timezone[:timezone]`- The name of the timezone to configure. Eg. `America/New_York`.
+* `timezone[:zone]`- The name of the timezone to configure. Eg. `America/New_York`.
   This value will be used as your `/etc/timezone` and the corresponding zoneinfo file
   will be symlinked to your `/etc/localtime`.
   Default: `UTC`
-* `timezone[:zoneinfo_dir]`- Directory containing the tree of zoneinfo files.
-  Default: `/usr/share/zoneinfo/`, which is the `tzdata` package default.
+* `timezone[:tz_file]`- File containing the configured timezone.
+  Default: `/etc/timezone`
 
 # USAGE
 
